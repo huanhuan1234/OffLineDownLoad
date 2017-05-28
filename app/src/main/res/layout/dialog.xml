@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rb_wifi"
+                android:text="WIFI"
+                android:textSize="25sp"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/rb_phoneliuliang"
+            android:text="手机流量"
+            android:textSize="25sp"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+</LinearLayout>
+
