@@ -15,6 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -295,16 +296,19 @@ public class MainActivity extends Activity implements XListView.IXListViewListen
                 vh=new VH();
                 view=View.inflate(context,R.layout.xlv_item,null);
                 vh.tv = (TextView) view.findViewById(R.id.tv);
+                vh.iv = (ImageView) view.findViewById(R.id.iv);
                 view.setTag(vh);
             }else {
                 vh= (VH) view.getTag();
             }
             vh.tv.setText(list.get(i).getName());
+            vh.iv.setImageResource(R.drawable.duihao);
             return view;
         }
 
     }
     class VH{
         TextView tv;
+        ImageView iv;
     }
 }
